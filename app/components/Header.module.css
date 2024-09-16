@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  display: flex;
+  vertical-align: middle;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+
+.logo a:hover {
+  color: #ffd700;
+}
+
+.logoImage {
+  border-radius: 50%; /* This makes the image circular */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav ul li a:hover {
+  background-color: #ffffff;
+  color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide navigation menu by default on small screens */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Show nav when menu is toggled */
+  .navOpen {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav ul li {
+    width: 100%;
+  }
+
+  .nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+
+  .hamburgerLine {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+
+  /* Hide hamburger when menu is open */
+  .hamburgerHidden {
+    display: none;
+  }
+
+  /* Center logo in mobile view */
+  .logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav ul {
+    gap: 5px;
+  }
+
+  .nav ul li a {
+    font-size: 0.9rem;
+  }
+}

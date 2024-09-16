@@ -1,0 +1,23 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Ensures the items align correctly */
+  gap: 16px; /* Adjusts spacing between cards */
+  padding: 2px;
+}
+.loadingImage {
+  display: block;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    justify-content: center; /* Center cards on smaller screens */
+  }
+}

@@ -1,0 +1,13 @@
+/* styles/Footer.module.css */
+.footer {
+  background-color: #007bff; /* Equivalent to Tailwind's bg-gray-800 */
+  color: white; /* Equivalent to Tailwind's text-white */
+  padding: 1rem 0; /* Equivalent to py-4 */
+  text-align: center; /* Equivalent to text-center */
+  direction: ltr;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Equivalent to mx-auto */
+}

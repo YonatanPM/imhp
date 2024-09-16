@@ -1,0 +1,25 @@
+.genersSection {
+  margin-bottom: 32px;
+  margin-top: 15px;
+  border-radius: 20px;
+
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.generTitle {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .generTitle {
+    text-align: center; /* Center the title on mobile */
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .cardsContainer {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+}
